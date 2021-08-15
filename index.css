@@ -1,0 +1,185 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital@0;1&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap");
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.wrapper {
+  padding: 10px;
+  min-width: 90%;
+  min-height: 100px;
+}
+
+.intro-reviews {
+  min-width: 100%;
+  padding: 30px;
+}
+
+.Text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.Text h1 {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 2rem;
+  font-weight: bold;
+  color: hsl(300, 43%, 22%);
+  margin: 0px 0px 20px 0px;
+  line-height: 2.5rem;
+}
+
+.Text p {
+  font-family: "Nanum Gothic", sans-serif;
+  color: hsl(300, 43%, 22%);
+  margin-bottom: 10px;
+  font-weight: lighter;
+  font-size: 0.9rem;
+}
+
+.five-stars {
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.five-star-review {
+  background-color: hsl(300, 24%, 96%);
+  border-radius: 10px;
+  margin-bottom: 20px;
+  padding: 20px 15px 20px 15px;
+  font-family: "Spartan", sans-serif;
+  font-weight: bold;
+  width: 100%;
+}
+
+.card-reviews {
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+}
+
+.card-reviews .card {
+  display: flex;
+  flex-direction: column;
+  background-color: hsl(300, 43%, 22%);
+  padding: 30px;
+  padding-top: 40px;
+  border-radius: 10px;
+  font-size: 0.6rem;
+  color: #fff;
+  font-family: "Spartan", sans-serif;
+  font-weight: lighter;
+  letter-spacing: 1.5px;
+  margin-bottom: 10px;
+}
+
+.name-pic {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 20px;
+}
+
+.name-pic img {
+  margin-right: 10px;
+  border-radius: 50px;
+  max-width: 40px;
+}
+
+.verified {
+  margin-top: 10px;
+  color: hsl(333, 80%, 67%);
+}
+
+.special-p {
+  line-height: 1rem;
+}
+
+@media screen and (min-width: 580px) {
+  .wrapper {
+    min-width: initial;
+    max-width: 500px;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .wrapper {
+    max-width: 90%;
+  }
+  .intro-reviews {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .Text {
+    flex: 0.5;
+    margin-right: 30px;
+  }
+
+  .five-stars {
+    flex: 1;
+  }
+
+  .five-star-review {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .five-star-review p {
+    margin-left: 20px;
+  }
+
+  .five-star-review img {
+    margin: 5px;
+  }
+
+  .guru {
+    margin-left: 70px;
+  }
+
+  .BestTech {
+    margin-left: 150px;
+  }
+
+  .card-reviews {
+    flex-direction: row;
+  }
+
+  .card-reviews .card {
+    margin-right: 30px;
+  }
+
+  .first {
+    margin-top: 30px;
+  }
+
+  .second {
+    margin-top: 60px;
+  }
+}
+
+@media screen and (min-width: 1300px) {
+  .intro-reviews {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .five-stars {
+    flex: 0.5;
+  }
+}
